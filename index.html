@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cryptographic Hardware Oriented Security and Efficiency Lab (CHOSE)</title>
+
+    <!-- Bootstrap Core CSS and javascript foranimation-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        var header = $('header');
+
+        var backgrounds = new Array(
+            'url(img/header.jpg)'
+          , 'url(img/1.jpg)'
+          , 'url(img/3.jpg)'
+          , 'url(img/4.jpg)'
+        );
+
+        var current = 0;
+
+        function nextBackground() {
+            current++;
+            current = current % backgrounds.length;
+            header.css('background-image', backgrounds[current]);
+        }
+        setInterval(nextBackground, 4000);
+
+        header.css('background-image', backgrounds[0]);
+        });
+    </script>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>  <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top" style="font-weight: 900;font-size:12px;padding-top: 5px;text-shadow: 1px 1px 1.5px black;">Cryptographic Hardware Oriented Security<br> and Efficiency Lab (CHOSE)</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" style="text-shadow: 1px 1px 9px #00000091">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">News</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Professor</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#student">Students</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in" style="text-shadow: 1px 1px 8px black">Welcome To Our Lab!</div>
+                <div class="intro-heading" style="text-shadow: 1px 1px 8px black">PH.D. POSITIONS OPENING</div>
+                <a href="#student" class="page-scroll btn btn-xl" style="text-shadow: 1px 1px 16px #4a303052">View more</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- News Section -->
+    <section id="services" style="background-color: #CCCC33;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">News</h2>
+                    <h3 class="section-subheading" style="color:#263238; font-weight: bold;text-decoration: underline;
+  text-decoration-color: #F4511E;  text-decoration-style: wavy;";>Two Ph.D. positions opening for Fall 2019, interested ones please send resume to Dr. Xie through: jiafeng.xie@villanova.edu</h3>
+                    <h3 class="section-subheading">2018 Publications</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4 class="service-heading">Low Register-Complexity Systolic Digit-Serial Multiplier over GF(2<sup>m</sup>;) based on Trinomials</h4>
+                    <p>J Xie, PK Meher, X Zhou, CY Lee
+                    <br>IEEE Transactions on Multi-Scale Computing Systems</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading">Novel Hybrid-Size Digit-Serial Systolic Multiplier over GF(2<sup>m</sup>;)</h4>
+                    <br>
+                    <p>Z Hu, J Xie
+                    <br>Symmetry 10 (11), 540</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading">Digit-Serial Versatile Multiplier Based on a Novel Block Recombination of the Modified Overlap-Free Karatsuba Algorithm</h4>
+                    <p>CY Lee, J Xie
+                    <br>IEEE Transactions on Circuits and Systems I: Regular Papers</p>
+                </div>
+                 <div class="col-md-4">
+                    <h4 class="service-heading">Reliable Inversion in GF(2<sup>8</sup>) With Redundant Arithmetic for Secure Error Detection of Cryptographic Architectures</h4>
+                    <p>MM Kermani, A Jalali, R Azarderakhsh, J Xie, KKR Choo
+                    <br>IEEE Transactions on Computer-Aided Design of Integrated Circuits and …</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading">Efficient Implementation of Karatsuba Algorithm Based Three-Operand Multiplication Over Binary Extension Field</h4>
+                    <p>CY Lee, CC Fan, J Xie, SM Yuan
+                    <br>IEEE Access 6, 38234-38242</p>
+                </div>
+                 <div class="col-md-4">
+                    <h4 class="service-heading">Low Complexity Implementation of Unified Systolic Multipliers for NIST Pentanomials and Trinomials over GF(2m)</h4>
+                    <p>Q Shao, Z Hu, SN Basha, Z Zhang, Z Wu, CY Lee, J Xie
+                    <br>IEEE Trans. Circuits and Systems-I, 1-11</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Research interests Section -->
+    <section id="research" style="background-color: #00A896;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Research Interest</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h4 class="service-heading">Finite Field Arithmetic Operations and Applications</h4>
+                    <p style="text-align: initial;">This direction of research focuses on investigating efficient algorithms and novel architectures for the computation of finite field operations according to their practical applications.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="service-heading">Intelligent System Security and Fault Detection</h4>
+                    <p style="text-align: initial;">These systems are often referred to feedback control systems that use communication networks for information exchange among various system-units such as sensors, and controllers.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="service-heading">VLSI Digital Signal/Image Processing Systems</h4>
+                    <p style="text-align: initial;">This research focuses on developing novel techniques to map advanced digital signal/image algorithms to architectures in various platforms, including FPGA-based image registration, pattern recognition, and machine learning systems.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="service-heading">Hardware Security</h4>
+                    <p style="text-align: initial;">This direction of research focuses on developing novel techniques to protect hardware IPs in both ASIC and FPGA platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Professor Section -->
+    <section id="team" style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our professor</h2>
+                </div>
+            </div>
+                <div>
+                    <div class="team-member">
+                        <img src="img/team/4.jpg" class="img-responsive img-circle" alt="">
+                        <h3>Jia Feng Xie</h3>
+                        <p>Assistant Professor in the department of Electrical and Computer<br>Currently serving on the editorial board of Mircoeletronics Journal(Elsevier)</p>
+                        <h4>Education</h4>
+                        <p>PhD Electrical Engineering at the University of Pittsburgh</p>
+                        <h4>Areas of Interest</h4>
+                        <p>Cryptographic Engineering<br>Hardware Security<br>VLSI Design for AI System</p>
+                         <h4>Teaching</h4>
+                        <p>[FALL 2018] Fund of Comp Engineering I Lab (ECE 2043-002)<br>[FALL 2018] Fund of Comp Engineering I Lab (ECE 2043-100)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- Student Section -->
+    <section id="student" style="background-color: #F2F4F4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="color:#222">Former students</h2>
+                </div>
+            </div>
+                <div>
+                    <div class="team-member col-lg-4">
+                        <img src="img/team/5.png" class="img-responsive img-circle" style="max-width: 219px; border:0px" alt="">
+                        <h3>Nazeem</h3>
+                    </div>
+                    <div class="team-member col-lg-4">
+                        <img src="img/team/6.png" class="img-responsive img-circle" style="max-width: 219px; border:0px" alt="">
+                        <h3>Shao</h3>
+                    </div>
+                    <div class="team-member col-lg-4">
+                        <img src="img/team/7.jpg" class="img-responsive img-circle" style="max-width: 219px; border:0px" alt="">
+                        <h3>shaobo</h3>
+                    </div>
+                        <div class="team-member col-lg-12">
+                        <img src="img/team/8.png" class="img-responsive img-circle" style="max-width: 219px; border:0px" alt="">
+                        <h3>Hu</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+  
+<!-- Bottom footer Section -->
+    <footer style="background-color:#222; color: ghostwhite">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Assitant Professor Jia Feng Xie<br></span>
+                </div>
+                <div class="col-md-4">
+                    <span class="copyright">Email: jiafeng.xie@villanova.edu</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; SECURITY & CRYPTO LAB 2019</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
